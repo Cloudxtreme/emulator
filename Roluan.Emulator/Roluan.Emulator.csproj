@@ -33,59 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Screen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Screen.Designer.cs">
-      <DependentUpon>Screen.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Screen.resx">
-      <DependentUpon>Screen.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Roluan.Board\Roluan.Board.csproj">
-      <Project>{B7E05FF9-5C05-491E-A958-5C58E7E75068}</Project>
-      <Name>Roluan.Board</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Roluan.Common\Roluan.Common.csproj">
-      <Project>{05FF788E-1F6E-4704-BECD-5AFD55D70A00}</Project>
-      <Name>Roluan.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -95,4 +46,14 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="..\Roluan.Emulator.Board\Roluan.Emulator.Board.csproj">
+      <Project>{B7E05FF9-5C05-491E-A958-5C58E7E75068}</Project>
+      <Name>Roluan.Emulator.Board</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Roluan.Emulator.Common\Roluan.Emulator.Common.csproj">
+      <Project>{05FF788E-1F6E-4704-BECD-5AFD55D70A00}</Project>
+      <Name>Roluan.Emulator.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
