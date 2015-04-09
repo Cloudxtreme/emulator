@@ -1,2 +1,2 @@
-# emulator
-Emulator for ternary computer written i c#
+# Roluan Emulator
+Emulator for ternary computer written in c#
