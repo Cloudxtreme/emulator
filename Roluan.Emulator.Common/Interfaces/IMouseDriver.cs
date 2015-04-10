@@ -1,5 +1,6 @@
-﻿using Roluan.Common.Base;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Roluan.Emulator.Common.Interfaces;
+using Roluan.Emulator.Common.Base;
 
 namespace Roluan.Common.Interfaces
 {

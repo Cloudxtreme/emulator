@@ -1,7 +1,7 @@
-﻿using Roluan.Board.Base.Registers;
-using Roluan.Common;
-using Roluan.Common.Base;
+﻿using Roluan.Common;
 using System.Collections.Generic;
+using Roluan.Emulator.Common.Base;
+using Roluan.Emulator.Common;
 
 namespace Roluan.Emulator.Board.Registers
 {
@@ -10,20 +10,17 @@ namespace Roluan.Emulator.Board.Registers
         
         public InterruptsRegister()
         {
-            this.Name = "InterruptsRegister";
             InitializeTrytes();
         }
 
 
         private void InitializeTrytes()
         {
-            //Interrupt Interrupt = new Interrupt();
             Trits = new List<Trit>();
             for (int i = 0; i < Config.INTERRUPTS_REGISTER_SIZE * 9; i++)
             {
                 Trits.Add(new Trit { });
             }
         }
-
     }
 }

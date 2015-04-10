@@ -1,4 +1,6 @@
-﻿using Roluan.Common.Base;
+﻿using Roluan.Emulator.Common.Interfaces;
+using Roluan.Emulator.Common.Base;
+
 namespace Roluan.Common.Interfaces
 {
     public interface IRAMDriver : IDriver

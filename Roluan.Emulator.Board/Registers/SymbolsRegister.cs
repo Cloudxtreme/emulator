@@ -1,7 +1,7 @@
-﻿using Roluan.Common;
-using Roluan.Common.Base;
-using Roluan.Common.Enums;
+﻿using Roluan.Common.Enums;
 using System.Collections.Generic;
+using Roluan.Emulator.Common.Base;
+using Roluan.Emulator.Common;
 
 namespace Roluan.Emulator.Board.Registers
 {
@@ -9,7 +9,6 @@ namespace Roluan.Emulator.Board.Registers
     {
         public SymbolsRegister()
         {
-            this.Name = "SymbolsRegister";
             InitializeSymbolsTable();
         }
 

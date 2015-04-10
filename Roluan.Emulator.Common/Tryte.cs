@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Roluan.Emulator.Common;
 
 namespace Roluan.Common
 {

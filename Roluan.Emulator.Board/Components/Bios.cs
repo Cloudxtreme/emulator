@@ -138,32 +138,32 @@ namespace Roluan.Emulator.Board.Components
             object driverInstance = driverFile.CreateInstance("Roluan.Driver", true, BindingFlags.CreateInstance, null, null, null, null);
             if (driverInstance != null && (driverInstance is IGraphicDriver))
             {
-                (driverInstance as IGraphicDriver).CurrentResolution = new Resolution() { Height = 500 , Width = 800 };
-                (driverInstance as IGraphicDriver).CurrentColorScheme = new ColorScheme() { Name = "2 colors", Size = 1 };
-
-                if ((driverInstance as IGraphicDriver).Initialize(hardwareInstance))
-                {
-                    //Board.Instance.Graphic = (driverInstance as IGraphicDriver);
-                    //Board.Instance.Graphic.TritMap = Roluan.Board.ROM;
-                    List<Trit> sbTrits = this.ROM.SymbolsRegister.Trits.Select(s => s).ToList();
-                    for (int i = 0; i < sbTrits.Count;i++ )
-                    {
-                        //Board.Instance.Graphic.TritMap[i] = sbTrits[i];
-                    }
-
-
-                    var hardwareMonitorFile = Assembly.LoadFrom(Path.Combine(Directory.GetCurrentDirectory(), Config.HARDWARE_PATH, "Roluan.Monitor.dll"));
-
-                    if (hardwareMonitorFile != null)
-                    {
-                        object hardwareMonitorInstance = hardwareMonitorFile.CreateInstance("Roluan.Hardware", true, BindingFlags.CreateInstance, null, null, null, null);
-
-                        if (hardwareMonitorInstance is IMonitorHardware)
-                        {
-                            IntializeMonitorHardware((IMonitorHardware)hardwareMonitorInstance);
-                        }
-                    }
-                }
+//                (driverInstance as IGraphicDriver).CurrentResolution = new Resolution() { Height = 500 , Width = 800 };
+//                (driverInstance as IGraphicDriver).CurrentColorScheme = new ColorScheme() { Name = "2 colors", Size = 1 };
+//
+//                if ((driverInstance as IGraphicDriver).Initialize(hardwareInstance))
+//                {
+//                    //Board.Instance.Graphic = (driverInstance as IGraphicDriver);
+//                    //Board.Instance.Graphic.TritMap = Roluan.Board.ROM;
+//                    List<Trit> sbTrits = this.ROM.SymbolsRegister.Trits.Select(s => s).ToList();
+//                    for (int i = 0; i < sbTrits.Count;i++ )
+//                    {
+//                        //Board.Instance.Graphic.TritMap[i] = sbTrits[i];
+//                    }
+//
+//
+//                    var hardwareMonitorFile = Assembly.LoadFrom(Path.Combine(Directory.GetCurrentDirectory(), Config.HARDWARE_PATH, "Roluan.Monitor.dll"));
+//
+//                    if (hardwareMonitorFile != null)
+//                    {
+//                        object hardwareMonitorInstance = hardwareMonitorFile.CreateInstance("Roluan.Hardware", true, BindingFlags.CreateInstance, null, null, null, null);
+//
+//                        if (hardwareMonitorInstance is IMonitorHardware)
+//                        {
+//                            IntializeMonitorHardware((IMonitorHardware)hardwareMonitorInstance);
+//                        }
+//                    }
+//                }
 
             }
             else

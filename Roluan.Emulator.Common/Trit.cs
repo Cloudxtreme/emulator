@@ -1,6 +1,6 @@
 ﻿using Roluan.Common.Enums;
 
-namespace Roluan.Common
+namespace Roluan.Emulator.Common
 {
 	public class Trit
 	{
