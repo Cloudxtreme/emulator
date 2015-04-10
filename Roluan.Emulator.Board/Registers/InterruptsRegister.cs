@@ -17,7 +17,7 @@ namespace Roluan.Emulator.Board.Registers
 
         private void InitializeTrytes()
         {
-            Interrupt Interrupt = new Interrupt();
+            //Interrupt Interrupt = new Interrupt();
             Trits = new List<Trit>();
             for (int i = 0; i < Config.INTERRUPTS_REGISTER_SIZE * 9; i++)
             {

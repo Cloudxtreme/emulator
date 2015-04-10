@@ -29,14 +29,13 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Base\Registers\Interrupt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Base\DeviceBase.cs" />
-    <Compile Include="Base\Registers\InterruptsRegister.cs" />
-    <Compile Include="Base\Registers\SymbolsRegister.cs" />
     <Compile Include="Components\Bios.cs" />
     <Compile Include="Components\ROM.cs" />
     <Compile Include="Mainboard.cs" />
+    <Compile Include="Registers\Interrupt.cs" />
+    <Compile Include="Registers\InterruptsRegister.cs" />
+    <Compile Include="Registers\SymbolsRegister.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />

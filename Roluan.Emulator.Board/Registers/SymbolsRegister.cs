@@ -3,7 +3,7 @@ using Roluan.Common.Base;
 using Roluan.Common.Enums;
 using System.Collections.Generic;
 
-namespace Roluan.Emuator.Board.Registers
+namespace Roluan.Emulator.Board.Registers
 {
     public class SymbolsRegister : RegisterBase
     {

@@ -57,6 +57,7 @@
     <Compile Include="Base\RegisterBase.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Tryte.cs" />
+    <Compile Include="Base\ControllerBase.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />

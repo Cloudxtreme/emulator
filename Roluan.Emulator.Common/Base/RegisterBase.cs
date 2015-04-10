@@ -1,13 +1,9 @@
 ﻿using System.Collections.Generic;
 
-namespace Roluan.Common.Base
+namespace Roluan.Emulator.Common.Base
 {
-	public class RegisterBase
-	{
-		public string Name { get; set; }
-
-		public List<Trit> Trits = new List<Trit>();
-
-                
-	}
+    public class RegisterBase
+    {
+        public List<Trit> Trits = new List<Trit>();
+    }
 }

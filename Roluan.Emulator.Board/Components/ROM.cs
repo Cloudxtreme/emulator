@@ -1,4 +1,4 @@
-﻿using Roluan.Board.Registers;
+﻿using Roluan.Emulator.Board.Registers;
 
 namespace Roluan.Emulator.Board.Components
 {
@@ -10,7 +10,6 @@ namespace Roluan.Emulator.Board.Components
 
         public ROM()
         {
-
             SymbolsRegister = new SymbolsRegister();
             InterruptsRegister = new InterruptsRegister();
         }
