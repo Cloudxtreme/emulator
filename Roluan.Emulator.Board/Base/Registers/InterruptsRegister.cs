@@ -3,7 +3,7 @@ using Roluan.Common;
 using Roluan.Common.Base;
 using System.Collections.Generic;
 
-namespace Roluan.Board.Registers
+namespace Roluan.Emulator.Board.Registers
 {
     public class InterruptsRegister : RegisterBase
     {
