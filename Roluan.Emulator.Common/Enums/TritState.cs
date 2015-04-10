@@ -1,4 +1,4 @@
-﻿namespace Roluan.Common.Enums
+﻿namespace Roluan.Emulator.Common.Enums
 {
 	public enum TritState
 	{
