@@ -1,4 +1,4 @@
-﻿using Roluan.Common.Enums;
+﻿using Roluan.Emulator.Common.Enums;
 
 namespace Roluan.Emulator.Common
 {

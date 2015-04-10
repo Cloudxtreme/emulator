@@ -1,5 +1,6 @@
-﻿using Roluan.Common.Enums;
-namespace Roluan.Common.Interfaces
+﻿using Roluan.Emulator.Common.Enums;
+
+namespace Roluan.Emulator.Common.Interfaces
 {
     public interface IKeyboardHardware : IHardware
     {

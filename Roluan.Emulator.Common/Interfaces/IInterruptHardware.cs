@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Roluan.Emulator.Common.Interfaces;
 
-namespace Roluan.Common.Interfaces
+namespace Roluan.Emulator.Common.Interfaces
 {
    public interface IInterruptHardware:IHardware
     {

@@ -1,4 +1,4 @@
-﻿namespace Roluan.Common.Interfaces
+﻿namespace Roluan.Emulator.Common.Interfaces
 {
     public interface IRAMHardware : IHardware
     {

@@ -1,7 +1,7 @@
-﻿using Roluan.Common.Enums;
-using System.Collections.Generic;
-using Roluan.Emulator.Common.Base;
+﻿using System.Collections.Generic;
 using Roluan.Emulator.Common;
+using Roluan.Emulator.Common.Base;
+using Roluan.Emulator.Common.Enums;
 
 namespace Roluan.Emulator.Board.Registers
 {

@@ -1,9 +1,11 @@
-﻿
-namespace Roluan.Common.Interfaces
+﻿namespace Roluan.Emulator.Common.Interfaces
 {
- public   interface IMonitorHardware:IHardware
+    public   interface IMonitorHardware: IHardware
     {
-         long Width { get; }// in points
-         long Height { get;  } // in points
+        // in points
+        long Width { get; }
+
+        // in points
+        long Height { get; }
     }
 }

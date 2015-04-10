@@ -1,4 +1,4 @@
-﻿namespace Roluan.Common
+﻿namespace Roluan.Emulator.Common
 {
     public static class Config
     {

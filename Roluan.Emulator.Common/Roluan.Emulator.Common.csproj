@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{05FF788E-1F6E-4704-BECD-5AFD55D70A00}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Roluan.Common</RootNamespace>
+    <RootNamespace>Roluan.Emulator.Common</RootNamespace>
     <AssemblyName>Roluan.Emulator.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseMSBuildEngine>False</UseMSBuildEngine>
@@ -68,7 +68,7 @@
     <MonoDevelop>
       <Properties>
         <Policies>
-          <DotNetNamingPolicy DirectoryNamespaceAssociation="PrefixedHierarchical" ResourceNamePolicy="FileFormatDefault" />
+          <DotNetNamingPolicy DirectoryNamespaceAssociation="PrefixedFlat" ResourceNamePolicy="FileFormatDefault" />
         </Policies>
       </Properties>
     </MonoDevelop>

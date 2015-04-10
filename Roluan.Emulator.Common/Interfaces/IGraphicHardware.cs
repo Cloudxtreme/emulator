@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
-namespace Roluan.Common.Interfaces
+﻿using Roluan.Emulator.Common.Interfaces;
+
+namespace Roluan.Emulator.Common.Interfaces
 {
     public interface IGraphicHardware : IHardware
     {

@@ -1,6 +1,6 @@
-﻿using Roluan.Common.Enums;
+﻿using Roluan.Emulator.Common.Enums;
 
-namespace Roluan.Common.Interfaces
+namespace Roluan.Emulator.Common.Interfaces
 {
     public interface IHardware
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Roluan.Emulator.Common;
+using Roluan.Emulator.Common.Enums;
 
-namespace Roluan.Common
+namespace Roluan.Emulator.Common
 {
     public class Tryte
     {
@@ -18,7 +18,7 @@ namespace Roluan.Common
 
             for (int i = 0; i < Config.TRYTE_SIZE; i++)
             {
-                Trits.Add(new Trit { State = Enums.TritState.Zero });
+                Trits.Add(new Trit { State = TritState.Zero });
             }
         }
     }
