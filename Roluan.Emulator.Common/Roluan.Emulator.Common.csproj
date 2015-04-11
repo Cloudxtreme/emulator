@@ -30,7 +30,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ALUOperation.cs" />
-    <Compile Include="ColorScheme.cs" />
     <Compile Include="Enums\InterruptPriorityLevel.cs" />
     <Compile Include="Enums\InterruptType.cs" />
     <Compile Include="Enums\KeyboardType.cs" />
@@ -58,6 +57,7 @@
     <Compile Include="Config.cs" />
     <Compile Include="Tryte.cs" />
     <Compile Include="Base\ControllerBase.cs" />
+    <Compile Include="ColorSchema.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />

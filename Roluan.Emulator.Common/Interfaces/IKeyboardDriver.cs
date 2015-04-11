@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
-using Roluan.Emulator.Common.Interfaces;
-using Roluan.Emulator.Common;
 using Roluan.Emulator.Common.Base;
 
-namespace Roluan.Common.Interfaces
+namespace Roluan.Emulator.Common.Interfaces
 {
     public interface IKeyboardDriver : IDriver
     {

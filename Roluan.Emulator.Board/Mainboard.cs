@@ -21,7 +21,7 @@ namespace Roluan.Emulator.Board
 
         #region Methods
 
-        private void Initialize()
+        void Initialize()
         {
             Bios = new Bios();
         }
