@@ -7,7 +7,7 @@ namespace Roluan.Emulator
         [STAThread]
         public static void Main()
         {
-          
+            
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Roluan.Emulator.Board.Registers;
 
-namespace Roluan.Emulator.Board.Components
+namespace Roluan.Emulator.Board.Components.BiosComponent
 {
     public class ROM
     {

@@ -1,4 +1,5 @@
 ﻿using Roluan.Emulator.Board.Components;
+using Roluan.Emulator.Board.Components.BiosComponent;
 
 namespace Roluan.Emulator.Board
 {

@@ -2,8 +2,11 @@
 
 namespace Roluan.Emulator.Common.Base
 {
+    /// <summary>
+    /// Represents the base for all memory registers
+    /// </summary>
     public class RegisterBase
     {
-        public List<Trit> Trits = new List<Trit>();
+        public List<Trit> Trits { get; set; }
     }
 }

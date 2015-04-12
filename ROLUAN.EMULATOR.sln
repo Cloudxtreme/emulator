@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hardware", "Hardware", "{84342D66-94D9-49C7-94FE-EE6A57C54251}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator.Processor", "Hardware\Roluan.Emulator.Processor\Roluan.Emulator.Processor.csproj", "{F19DA1F1-450C-4845-AA9D-9F77C257B951}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator", "Roluan.Emulator\Roluan.Emulator.csproj", "{C651A8C9-9DAC-45AC-9716-1E20E4A2ABF5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator.Board", "Roluan.Emulator.Board\Roluan.Emulator.Board.csproj", "{B7E05FF9-5C05-491E-A958-5C58E7E75068}"
@@ -37,8 +39,13 @@ Global
 		{C651A8C9-9DAC-45AC-9716-1E20E4A2ABF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C651A8C9-9DAC-45AC-9716-1E20E4A2ABF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C651A8C9-9DAC-45AC-9716-1E20E4A2ABF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F19DA1F1-450C-4845-AA9D-9F77C257B951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F19DA1F1-450C-4845-AA9D-9F77C257B951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F19DA1F1-450C-4845-AA9D-9F77C257B951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F19DA1F1-450C-4845-AA9D-9F77C257B951}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{F19DA1F1-450C-4845-AA9D-9F77C257B951} = {84342D66-94D9-49C7-94FE-EE6A57C54251}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0

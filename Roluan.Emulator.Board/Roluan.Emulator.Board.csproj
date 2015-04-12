@@ -30,12 +30,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Components\Bios.cs" />
-    <Compile Include="Components\ROM.cs" />
     <Compile Include="Mainboard.cs" />
     <Compile Include="Registers\Interrupt.cs" />
     <Compile Include="Registers\InterruptsRegister.cs" />
-    <Compile Include="Registers\SymbolsRegister.cs" />
+    <Compile Include="Components\BiosComponent\Bios.cs" />
+    <Compile Include="Components\BiosComponent\ROM.cs" />
+    <Compile Include="Components\BiosComponent\SymbolsRegister.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />
@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\" />
+    <Folder Include="Components\BiosComponent\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Roluan.Emulator.Common\Roluan.Emulator.Common.csproj">
