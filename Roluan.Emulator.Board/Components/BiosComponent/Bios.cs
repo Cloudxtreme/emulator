@@ -3,7 +3,6 @@ using System.IO;
 using System.Reflection;
 using Roluan.Emulator.Common;
 using Roluan.Emulator.Common.Interfaces;
-using Roluan.Emulator.Common.Base;
 
 namespace Roluan.Emulator.Board.Components.BiosComponent
 {

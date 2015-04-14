@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Drivers", "Drivers", "{6811AAE0-5E1B-45C1-85A3-CA5C19D2168C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{E80E81AD-66EE-4AF3-B416-A2AC4CD26359}"
 	ProjectSection(SolutionItems) = preProject
 		Documentation\KeyboardCodes.xlsx = Documentation\KeyboardCodes.xlsx

@@ -51,9 +51,5 @@
       <Project>{B7E05FF9-5C05-491E-A958-5C58E7E75068}</Project>
       <Name>Roluan.Emulator.Board</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Roluan.Emulator.Common\Roluan.Emulator.Common.csproj">
-      <Project>{05FF788E-1F6E-4704-BECD-5AFD55D70A00}</Project>
-      <Name>Roluan.Emulator.Common</Name>
-    </ProjectReference>
   </ItemGroup>
 </Project>
