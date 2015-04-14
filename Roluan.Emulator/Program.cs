@@ -1,4 +1,5 @@
 ﻿using System;
+using Roluan.Emulator.Board.Components.BiosComponent;
 
 namespace Roluan.Emulator
 {
@@ -7,7 +8,7 @@ namespace Roluan.Emulator
         [STAThread]
         public static void Main()
         {
-            
+            new Bios();
         }
     }
 }

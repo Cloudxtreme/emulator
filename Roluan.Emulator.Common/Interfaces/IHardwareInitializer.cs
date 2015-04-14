@@ -2,8 +2,8 @@
 
 namespace Roluan.Emulator.Common.Interfaces
 {
-    public interface IGraphicDriver: IDriver
+    public interface IHardwareInitializer
     {
-        
+        IHardware Initialize();    
     }
 }

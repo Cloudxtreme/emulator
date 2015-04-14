@@ -6,7 +6,7 @@ namespace Roluan.Emulator.Common.Base
     /// <summary>
     /// Represents the base for all hardware controllers
     /// </summary>
-    public class ControllerBase
+    public class ControllerBase<T>
     {
         public IList<RegisterBase> Registers { get; set; }
 

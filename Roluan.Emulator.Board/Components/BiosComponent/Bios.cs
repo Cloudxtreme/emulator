@@ -3,6 +3,7 @@ using System.IO;
 using System.Reflection;
 using Roluan.Emulator.Common;
 using Roluan.Emulator.Common.Interfaces;
+using Roluan.Emulator.Common.Base;
 
 namespace Roluan.Emulator.Board.Components.BiosComponent
 {
@@ -14,7 +15,6 @@ namespace Roluan.Emulator.Board.Components.BiosComponent
         {
             InitializeROM();
             InitializeHardware();
-            Console.Beep(800, 500);
         }
 
         void InitializeROM()
@@ -24,16 +24,15 @@ namespace Roluan.Emulator.Board.Components.BiosComponent
 
         void InitializeHardware()
         {
-
             DirectoryInfo hardwareDirectory = new DirectoryInfo(Path.Combine(Directory.GetCurrentDirectory(), Config.HARDWARE_PATH));
             FileInfo[] files = hardwareDirectory.GetFiles("*.dll");
             if (files != null && files.Length > 0)
             {
-                ParseHardware(files);
+                ParseHardwareFiles(files);
             }
         }
 
-        void ParseHardware(FileInfo[] files)
+        void ParseHardwareFiles(FileInfo[] files)
         {
             Assembly hardwareFile = null;
             foreach (FileInfo file in files)
@@ -42,25 +41,9 @@ namespace Roluan.Emulator.Board.Components.BiosComponent
                 {
                     hardwareFile = Assembly.LoadFrom(file.FullName);
                     object hardwareInstance = hardwareFile.CreateInstance("Roluan.Emulator.Hardware", true, BindingFlags.CreateInstance, null, null, null, null);
-                    if (hardwareInstance is IHardware)
+                    if (hardwareInstance is IHardwareInitializer)
                     {
-                        if (hardwareInstance is IRAMHardware)
-                        {
-                            InitializeRAMHardware((IRAMHardware)hardwareInstance);
-
-                        }
-                        else if (hardwareInstance is IKeyboardHardware)
-                        {
-                            IntializeKeyboardHardware((IKeyboardHardware)hardwareInstance);
-                        }
-                        else if (hardwareInstance is IMouseHardware)
-                        {
-                            IntializeMouseHardware((IMouseHardware)hardwareInstance);
-                        }
-                        else if (hardwareInstance is IGraphicHardware)
-                        {
-                            InitializeGraphicHardware((IGraphicHardware)hardwareInstance);
-                        }
+                        (hardwareInstance as IHardwareInitializer).Initialize();
                     }
                 }
                 catch
@@ -69,120 +52,5 @@ namespace Roluan.Emulator.Board.Components.BiosComponent
                 }
             }
         }
-
-        void IntializeKeyboardHardware(IKeyboardHardware hardwareInstance)
-        {
-//            Assembly driverFile = Assembly.LoadFrom(Path.Combine(Directory.GetCurrentDirectory(), Config.DRIVERS_PATH, "Roluan.Keyboard.Driver.dll"));
-//            object driverInstance = driverFile.CreateInstance("Roluan.Driver", true, BindingFlags.CreateInstance, null, null, null, null);
-//            if (driverInstance != null && (driverInstance is IKeyboardDriver) && (driverInstance as IKeyboardDriver).Initialize(hardwareInstance))
-//            {
-//                //Board.Instance.Keyboard = (driverInstance as IKeyboardDriver);
-//            }
-//            else
-//            {
-//            }
-        }
-
-        void IntializeMouseHardware(IMouseHardware hardwareInstance)
-        {
-//            Assembly driverFile = Assembly.LoadFrom(Path.Combine(Directory.GetCurrentDirectory(), Config.DRIVERS_PATH, "Roluan.Mouse.Driver.dll"));
-//            object driverInstance = driverFile.CreateInstance("Roluan.Driver", true, BindingFlags.CreateInstance, null, null, null, null);
-//            if (driverInstance != null && (driverInstance is IMouseDriver) && (driverInstance as IMouseDriver).Initialize(hardwareInstance))
-//            {
-//                //Board.Instance.Mouse = (driverInstance as IMouseDriver);
-//
-//            }
-//            else
-//            {
-//            }
-        }
-            
-        void IntializeMonitorHardware(IMonitorHardware hardwareInstance)
-        {
-//            Assembly driverFile = Assembly.LoadFrom(Path.Combine(Directory.GetCurrentDirectory(), Config.DRIVERS_PATH, "Roluan.Monitor.Driver.dll"));
-//            object driverInstance = driverFile.CreateInstance("Roluan.Driver", true, BindingFlags.CreateInstance, null, null, null, null);
-//            if (driverInstance != null && (driverInstance is IMonitorDriver) && (driverInstance as IMonitorDriver).Initialize(hardwareInstance))
-//            {
-//                //Board.Instance.Monitor = (driverInstance as IMonitorDriver);
-//            }
-//            else
-//            {
-//            }
-        }
-
-        void InitializeRAMHardware(IRAMHardware hardwareInstance)
-        {
-//            Assembly driverFile = Assembly.LoadFrom(Path.Combine(Directory.GetCurrentDirectory(), Config.DRIVERS_PATH, "Roluan.RAM.Driver.dll"));
-//            object driverInstance = driverFile.CreateInstance("Roluan.Driver", true, BindingFlags.CreateInstance, null, null, null, null);
-//            if (driverInstance != null && (driverInstance is IRAMDriver) && (driverInstance as IRAMDriver).Initialize(hardwareInstance))
-//            {
-//                //Board.Instance.RAM = (driverInstance as IRAMDriver);
-//            }
-//            else
-//            {
-//                Console.Beep(800, 1000);
-//                Thread.Sleep(100);
-//                Console.Beep(800, 1000);
-//            }
-        }
-
-        void InitializeGraphicHardware(IGraphicHardware hardwareInstance)
-        {
-//            Assembly driverFile = Assembly.LoadFrom(Path.Combine(Directory.GetCurrentDirectory(), Config.DRIVERS_PATH, "Roluan.Graphics.Driver.dll"));
-//            object driverInstance = driverFile.CreateInstance("Roluan.Driver", true, BindingFlags.CreateInstance, null, null, null, null);
-//            if (driverInstance != null && (driverInstance is IGraphicDriver))
-//            {
-////                (driverInstance as IGraphicDriver).CurrentResolution = new Resolution() { Height = 500 , Width = 800 };
-////                (driverInstance as IGraphicDriver).CurrentColorScheme = new ColorScheme() { Name = "2 colors", Size = 1 };
-////
-////                if ((driverInstance as IGraphicDriver).Initialize(hardwareInstance))
-////                {
-////                    //Board.Instance.Graphic = (driverInstance as IGraphicDriver);
-////                    //Board.Instance.Graphic.TritMap = Roluan.Board.ROM;
-////                    List<Trit> sbTrits = this.ROM.SymbolsRegister.Trits.Select(s => s).ToList();
-////                    for (int i = 0; i < sbTrits.Count;i++ )
-////                    {
-////                        //Board.Instance.Graphic.TritMap[i] = sbTrits[i];
-////                    }
-////
-////
-////                    var hardwareMonitorFile = Assembly.LoadFrom(Path.Combine(Directory.GetCurrentDirectory(), Config.HARDWARE_PATH, "Roluan.Monitor.dll"));
-////
-////                    if (hardwareMonitorFile != null)
-////                    {
-////                        object hardwareMonitorInstance = hardwareMonitorFile.CreateInstance("Roluan.Hardware", true, BindingFlags.CreateInstance, null, null, null, null);
-////
-////                        if (hardwareMonitorInstance is IMonitorHardware)
-////                        {
-////                            IntializeMonitorHardware((IMonitorHardware)hardwareMonitorInstance);
-////                        }
-////                    }
-////                }
-//
-//            }
-//            else
-//            {
-//                Console.Beep(800, 1000);
-//                Thread.Sleep(100);
-//                Console.Beep(800, 1000);
-//            }
-        }
-
-        void InitializeIterruptHardware(IInterruptHardware hardwareInstance)
-        {
-//            Assembly driverFile = Assembly.LoadFrom(Path.Combine(Directory.GetCurrentDirectory(), Config.DRIVERS_PATH, "Roluan.Interrupt.Driver.dll"));
-//            object driverInstance = driverFile.CreateInstance("Roluan.Driver", true, BindingFlags.CreateInstance, null, null, null, null);
-//            if (driverInstance != null && (driverInstance is IRAMDriver) && (driverInstance as IInterruptDriver).Initialize(hardwareInstance))
-//            {
-//                //Board.Instance.Interrupt = (driverInstance as IInterruptDriver);
-//            }
-//            else
-//            {
-//                Console.Beep(800, 1000);
-//                Thread.Sleep(100);
-//                Console.Beep(800, 1000);
-//            }
-        }
-
     }
 }

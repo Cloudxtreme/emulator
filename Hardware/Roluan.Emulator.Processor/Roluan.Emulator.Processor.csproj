@@ -35,6 +35,9 @@
   <ItemGroup>
     <Compile Include="Hardware.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Processor.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="Driver.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -48,6 +51,7 @@
     <ProjectReference Include="..\..\Roluan.Emulator.Common\Roluan.Emulator.Common.csproj">
       <Project>{05FF788E-1F6E-4704-BECD-5AFD55D70A00}</Project>
       <Name>Roluan.Emulator.Common</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
 </Project>
