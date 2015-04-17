@@ -12,7 +12,7 @@ namespace Roluan.Emulator.Board.Components.BiosComponent
 
         public RAM RAM { get; private set; }
 
-        public void Initialize()
+        public Bios()
         {
             InitializeMemory();
             InitializeHardware(); 
@@ -47,7 +47,7 @@ namespace Roluan.Emulator.Board.Components.BiosComponent
             foreach (FileInfo file in files)
             {
                 hardwareFile = Assembly.LoadFrom(file.FullName);
-                object hardwareInstance = hardwareFile.CreateInstance("Roluan.Emulator.Hardware", true, BindingFlags.CreateInstance, null, null, null, null);
+                object hardwareInstance = hardwareFile.CreateInstance(Config.HARDWARE_DEFAULT_NAMESPACE_NAME, false, BindingFlags.CreateInstance, null, null, null, null);
                 if (hardwareInstance is IHardwareInitializer)
                 {
                     (hardwareInstance as IHardwareInitializer).Initialize();

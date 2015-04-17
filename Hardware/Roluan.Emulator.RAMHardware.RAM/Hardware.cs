@@ -1,4 +1,5 @@
 ﻿using Roluan.Emulator.Common.Interfaces;
+using Roluan.Emulator.RAMHardware;
 
 namespace Roluan.Emulator
 {
@@ -6,7 +7,7 @@ namespace Roluan.Emulator
     {
         public IHardware Initialize()
         {
-            //return new Processor.Base.Processor();
+            return new RAM();
         }
     }
 }

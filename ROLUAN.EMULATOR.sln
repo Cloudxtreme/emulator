@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hardware", "Hardware", "{84342D66-94D9-49C7-94FE-EE6A57C54251}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator.ProcessorHardware", "Hardware\Roluan.Emulator.Processor\Roluan.Emulator.ProcessorHardware.csproj", "{F19DA1F1-450C-4845-AA9D-9F77C257B951}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator.ProcessorHardware", "Hardware\Roluan.Emulator.ProcessorHardware\Roluan.Emulator.ProcessorHardware.csproj", "{F19DA1F1-450C-4845-AA9D-9F77C257B951}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator.RAM", "Hardware\Roluan.Emulator.RAM\Roluan.Emulator.RAM.csproj", "{BBD54398-93CD-4E7B-B74A-8164F41C3DBD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator.RAMHardware", "Hardware\Roluan.Emulator.RAMHardware.RAM\Roluan.Emulator.RAMHardware.csproj", "{BBD54398-93CD-4E7B-B74A-8164F41C3DBD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator", "Roluan.Emulator\Roluan.Emulator.csproj", "{C651A8C9-9DAC-45AC-9716-1E20E4A2ABF5}"
 EndProject

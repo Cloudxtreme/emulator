@@ -4,7 +4,7 @@ using Roluan.Emulator.Common.Interfaces;
 
 namespace Roluan.Emulator.ProcessorHardware
 {
-    public class Processor: IHardware, IProcessor
+    public class Processor: IProcessor
     {
         public int Cores
         {

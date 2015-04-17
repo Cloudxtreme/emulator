@@ -1,8 +1,8 @@
-﻿using Roluan.Emulator.Common.Interfaces;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Roluan.Emulator.Common.Base;
+using Roluan.Emulator.Common.Interfaces;
 
-namespace Roluan.Emulator.ProcessorHardware
+namespace Roluan.Emulator.RAMHardware
 {
     public class Controller : IController
     {
