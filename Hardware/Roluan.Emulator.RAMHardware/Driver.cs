@@ -7,4 +7,3 @@ namespace Roluan.Emulator.RAMHardware
 
     }
 }
-

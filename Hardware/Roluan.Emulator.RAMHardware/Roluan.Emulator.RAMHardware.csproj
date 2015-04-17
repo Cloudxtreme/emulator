@@ -36,6 +36,7 @@
     <Compile Include="Controller.cs" />
     <Compile Include="Driver.cs" />
     <Compile Include="RAM.cs" />
+    <Compile Include="Registers\InfoRegister.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -49,5 +50,8 @@
       <Name>Roluan.Emulator.Common</Name>
       <Private>False</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Registers\" />
   </ItemGroup>
 </Project>
