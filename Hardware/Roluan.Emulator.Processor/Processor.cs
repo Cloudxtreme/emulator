@@ -2,7 +2,7 @@
 using Roluan.Emulator.Common.Enums;
 using Roluan.Emulator.Common.Interfaces;
 
-namespace Roluan.Emulator.Processor.Base
+namespace Roluan.Emulator.ProcessorHardware
 {
     public class Processor: IHardware, IProcessor
     {

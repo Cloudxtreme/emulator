@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Roluan.Emulator.Common.Base;
 
-namespace Roluan.Emulator.Processor.Base
+namespace Roluan.Emulator.ProcessorHardware
 {
     public class Controller : IController
     {

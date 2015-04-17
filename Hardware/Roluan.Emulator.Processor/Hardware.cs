@@ -1,6 +1,6 @@
 ﻿using Roluan.Emulator.Common.Interfaces;
 
-namespace Roluan.Emulator
+namespace Roluan.Emulator.Hardware
 {
     public class Hardware : IHardwareInitializer
     {
