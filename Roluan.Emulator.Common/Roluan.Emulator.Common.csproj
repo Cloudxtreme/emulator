@@ -42,7 +42,6 @@
     <Compile Include="Base\RegisterBase.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Tryte.cs" />
-    <Compile Include="Base\ControllerBase.cs" />
     <Compile Include="ColorSchema.cs" />
     <Compile Include="Interfaces\IController.cs" />
     <Compile Include="Interfaces\IHardware.cs" />
