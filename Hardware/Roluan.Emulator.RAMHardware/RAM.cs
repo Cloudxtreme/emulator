@@ -1,25 +1,22 @@
 ﻿using Roluan.Emulator.Board.Interfaces;
-using Roluan.Emulator.Common.Enums;
-using Roluan.Emulator.Common.Interfaces;
+using Roluan.Emulator.Common.Base;
 
 namespace Roluan.Emulator.RAMHardware
 {
-    public class RAM: IRAM
+    public class RAM: HardwareBase, IRAM
     {
-        public PriorityType PriorityType
+        readonly Controller controller = new Controller();
+
+        #region implemented abstract members of HardwareBase
+
+        public override ControllerBase Controller
         {
             get
             {
-                return PriorityType.High;
+                return controller;
             }
         }
 
-        public IController Controller
-        {
-            get
-            {
-                return new Controller();
-            }
-        }
+        #endregion
     }
 }

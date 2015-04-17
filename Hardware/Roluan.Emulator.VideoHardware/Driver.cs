@@ -1,8 +1,8 @@
-﻿using Roluan.Emulator.Common.Interfaces;
+﻿using Roluan.Emulator.Common.Base;
 
 namespace Roluan.Emulator.VideoHardware
 {
-    public class Driver: IDriver
+    public class Driver: DriverBase
     {
 
     }

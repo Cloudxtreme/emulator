@@ -1,9 +1,9 @@
-﻿using Roluan.Emulator.Common.Interfaces;
+﻿using Roluan.Emulator.Common.Base;
 
 namespace Roluan.Emulator.Common.Interfaces
 {
     public interface IHardwareInitializer
     {
-        IHardware Initialize();    
+        HardwareBase Initialize();    
     }
 }

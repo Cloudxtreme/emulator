@@ -1,8 +1,7 @@
-﻿using Roluan.Emulator.Common;
-using Roluan.Emulator.Common.Base;
+﻿using System.Collections.Generic;
 using Roluan.Emulator.Common.Enums;
 
-namespace Roluan.Emulator.RAMHardware.Registers
+namespace Roluan.Emulator.Common.Base
 {
     public class InfoRegister: RegisterBase
     {
@@ -11,9 +10,11 @@ namespace Roluan.Emulator.RAMHardware.Registers
             Initialize();
         }
 
-        private void Initialize()
+        void Initialize()
         {
-            for (int i = 0; i <= 243; i++)
+            Trits = new List<Trit>();
+            
+            for (int i = 0; i < 243; i++)
             {
                 Trits.Add(new Trit{ State = TritState.Zero });
             }
