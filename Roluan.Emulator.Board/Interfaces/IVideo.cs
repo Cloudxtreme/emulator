@@ -1,6 +1,8 @@
-﻿namespace Roluan.Emulator.Board.Interfaces
+﻿using Roluan.Emulator.Common.Interfaces;
+
+namespace Roluan.Emulator.Board.Interfaces
 {
-    public interface IVideo
+    public interface IVideo : IHardware
     {
 
     }
