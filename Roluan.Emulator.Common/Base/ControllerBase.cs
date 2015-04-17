@@ -12,6 +12,6 @@
             }
         }
 
-        public DriverBase Driver { get; }
+        public abstract DriverBase Driver { get; }
     }
 }
