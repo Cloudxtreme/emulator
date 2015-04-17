@@ -7,7 +7,7 @@ namespace Roluan.Emulator.RAMHardware
     {
         readonly Controller controller = new Controller();
 
-        #region implemented abstract members of HardwareBase
+        #region Implemented abstract members of HardwareBase
 
         public override ControllerBase Controller
         {

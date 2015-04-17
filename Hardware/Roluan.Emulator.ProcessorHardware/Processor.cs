@@ -12,7 +12,7 @@ namespace Roluan.Emulator.ProcessorHardware
             get { return 8; }
         }
 
-        #region implemented abstract members of HardwareBase
+        #region Implemented abstract members of HardwareBase
 
         public override ControllerBase Controller
         {

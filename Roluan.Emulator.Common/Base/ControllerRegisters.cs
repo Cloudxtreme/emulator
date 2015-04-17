@@ -1,12 +1,15 @@
-﻿using System.Collections.Generic;
-
-namespace Roluan.Emulator.Common.Base
+﻿namespace Roluan.Emulator.Common.Base
 {
-    public class ControllerRegisters: List<RegisterBase>
+    public class ControllerRegisters
     {
-        public ControllerRegisters()
+        readonly InfoRegister infoRegister = new InfoRegister();
+
+        public InfoRegister InfoRegister
         {
-            Add(new InfoRegister());
+            get
+            { 
+                return infoRegister;
+            }
         }
     }
 }
