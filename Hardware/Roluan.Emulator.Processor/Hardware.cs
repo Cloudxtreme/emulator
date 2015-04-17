@@ -1,6 +1,4 @@
-﻿using Roluan.Emulator.Common.Enums;
-using Roluan.Emulator.Common.Interfaces;
-using Roluan.Emulator.Common.Base;
+﻿using Roluan.Emulator.Common.Interfaces;
 
 namespace Roluan.Emulator
 {
@@ -8,7 +6,7 @@ namespace Roluan.Emulator
     {
         public IHardware Initialize()
         {
-            return new Processor();
+            return new Processor.Base.Processor();
         }
     }
 }

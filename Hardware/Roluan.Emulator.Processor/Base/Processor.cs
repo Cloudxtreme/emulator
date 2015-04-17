@@ -1,21 +1,15 @@
-﻿using Roluan.Emulator.Common.Enums;
+﻿using Roluan.Emulator.Board.Interfaces;
+using Roluan.Emulator.Common.Enums;
 using Roluan.Emulator.Common.Interfaces;
-using Roluan.Processor;
 
-namespace Roluan.Emulator
+namespace Roluan.Emulator.Processor.Base
 {
-    public class Processor: IHardware
+    public class Processor: IHardware, IProcessor
     {
         public int Cores
         {
             get { return 8; }
         }
-
-        public int Cores2
-        {
-            get { return 8888; }
-        }
-
 
         public PriorityType PriorityType
         {

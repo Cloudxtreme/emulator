@@ -10,15 +10,18 @@ namespace Roluan.Emulator.Board.Components.BiosComponent
     {
         public ROM ROM { get; private set; }
 
-        public Bios()
+        public RAM RAM { get; private set; }
+
+        public void Initialize()
         {
-            InitializeROM();
-            InitializeHardware();
+            InitializeMemory();
+            InitializeHardware(); 
         }
 
-        void InitializeROM()
+        void InitializeMemory()
         {
             ROM = new ROM();
+            RAM = new RAM();
         }
 
         void InitializeHardware()
@@ -27,7 +30,14 @@ namespace Roluan.Emulator.Board.Components.BiosComponent
             FileInfo[] files = hardwareDirectory.GetFiles("*.dll");
             if (files != null && files.Length > 0)
             {
-                ParseHardwareFiles(files);
+                try
+                {
+                    ParseHardwareFiles(files);
+                }
+                catch
+                {
+                    Console.Beep(800, 2000);
+                }
             }
         }
 
@@ -36,18 +46,11 @@ namespace Roluan.Emulator.Board.Components.BiosComponent
             Assembly hardwareFile = null;
             foreach (FileInfo file in files)
             {
-                try
+                hardwareFile = Assembly.LoadFrom(file.FullName);
+                object hardwareInstance = hardwareFile.CreateInstance("Roluan.Emulator.Hardware", true, BindingFlags.CreateInstance, null, null, null, null);
+                if (hardwareInstance is IHardwareInitializer)
                 {
-                    hardwareFile = Assembly.LoadFrom(file.FullName);
-                    object hardwareInstance = hardwareFile.CreateInstance("Roluan.Emulator.Hardware", true, BindingFlags.CreateInstance, null, null, null, null);
-                    if (hardwareInstance is IHardwareInitializer)
-                    {
-                        (hardwareInstance as IHardwareInitializer).Initialize();
-                    }
-                }
-                catch
-                {
-                    Console.Beep(800, 2000);
+                    (hardwareInstance as IHardwareInitializer).Initialize();
                 }
             }
         }

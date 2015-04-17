@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Roluan.Emulator.Common.Base;
 
-namespace Roluan.Processor
+namespace Roluan.Emulator.Processor.Base
 {
     public class Controller : IController
     {
@@ -23,4 +23,3 @@ namespace Roluan.Processor
         }
     }
 }
-

@@ -30,12 +30,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Mainboard.cs" />
     <Compile Include="Registers\Interrupt.cs" />
     <Compile Include="Registers\InterruptsRegister.cs" />
     <Compile Include="Components\BiosComponent\Bios.cs" />
-    <Compile Include="Components\BiosComponent\ROM.cs" />
     <Compile Include="Components\BiosComponent\SymbolsRegister.cs" />
+    <Compile Include="Components\Bus\InternalBus.cs" />
+    <Compile Include="Components\Bus\NorthBridge.cs" />
+    <Compile Include="Components\Bus\SouthBridge.cs" />
+    <Compile Include="Interfaces\IRAM.cs" />
+    <Compile Include="Interfaces\IProcessor.cs" />
+    <Compile Include="Interfaces\IVideo.cs" />
+    <Compile Include="Components\IO\USBPort.cs" />
+    <Compile Include="Components\IO\PCIePort.cs" />
+    <Compile Include="Components\BiosComponent\DevicesRegister.cs" />
+    <Compile Include="MainBoard.cs" />
+    <Compile Include="Components\BiosComponent\ROM.cs" />
+    <Compile Include="Components\BiosComponent\RAM.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />
@@ -45,6 +55,9 @@
   <ItemGroup>
     <Folder Include="Components\" />
     <Folder Include="Components\BiosComponent\" />
+    <Folder Include="Components\Bus\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Components\IO\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Roluan.Emulator.Common\Roluan.Emulator.Common.csproj">
