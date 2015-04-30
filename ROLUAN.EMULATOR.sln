@@ -3,23 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{E80E81AD-66EE-4AF3-B416-A2AC4CD26359}"
-	ProjectSection(SolutionItems) = preProject
-		Documentation\KeyboardCodes.xlsx = Documentation\KeyboardCodes.xlsx
-		Documentation\SymbolCodes.xlsx = Documentation\SymbolCodes.xlsx
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hardware", "Hardware", "{84342D66-94D9-49C7-94FE-EE6A57C54251}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator.ProcessorHardware", "Hardware\Roluan.Emulator.ProcessorHardware\Roluan.Emulator.ProcessorHardware.csproj", "{F19DA1F1-450C-4845-AA9D-9F77C257B951}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator.RAMHardware", "Hardware\Roluan.Emulator.RAMHardware\Roluan.Emulator.RAMHardware.csproj", "{BBD54398-93CD-4E7B-B74A-8164F41C3DBD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator.VideoHardware", "Hardware\Roluan.Emulator.VideoHardware\Roluan.Emulator.VideoHardware.csproj", "{9F6DEE26-9755-4040-B63A-85BF9AB3AFD0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator", "Roluan.Emulator\Roluan.Emulator.csproj", "{C651A8C9-9DAC-45AC-9716-1E20E4A2ABF5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator.Board", "Roluan.Emulator.Board\Roluan.Emulator.Board.csproj", "{B7E05FF9-5C05-491E-A958-5C58E7E75068}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roluan.Emulator.Common", "Roluan.Emulator.Common\Roluan.Emulator.Common.csproj", "{05FF788E-1F6E-4704-BECD-5AFD55D70A00}"
 EndProject
@@ -33,31 +17,10 @@ Global
 		{05FF788E-1F6E-4704-BECD-5AFD55D70A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05FF788E-1F6E-4704-BECD-5AFD55D70A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05FF788E-1F6E-4704-BECD-5AFD55D70A00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9F6DEE26-9755-4040-B63A-85BF9AB3AFD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F6DEE26-9755-4040-B63A-85BF9AB3AFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F6DEE26-9755-4040-B63A-85BF9AB3AFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F6DEE26-9755-4040-B63A-85BF9AB3AFD0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B7E05FF9-5C05-491E-A958-5C58E7E75068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B7E05FF9-5C05-491E-A958-5C58E7E75068}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B7E05FF9-5C05-491E-A958-5C58E7E75068}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B7E05FF9-5C05-491E-A958-5C58E7E75068}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BBD54398-93CD-4E7B-B74A-8164F41C3DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BBD54398-93CD-4E7B-B74A-8164F41C3DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BBD54398-93CD-4E7B-B74A-8164F41C3DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BBD54398-93CD-4E7B-B74A-8164F41C3DBD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C651A8C9-9DAC-45AC-9716-1E20E4A2ABF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C651A8C9-9DAC-45AC-9716-1E20E4A2ABF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C651A8C9-9DAC-45AC-9716-1E20E4A2ABF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C651A8C9-9DAC-45AC-9716-1E20E4A2ABF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F19DA1F1-450C-4845-AA9D-9F77C257B951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F19DA1F1-450C-4845-AA9D-9F77C257B951}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F19DA1F1-450C-4845-AA9D-9F77C257B951}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F19DA1F1-450C-4845-AA9D-9F77C257B951}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{F19DA1F1-450C-4845-AA9D-9F77C257B951} = {84342D66-94D9-49C7-94FE-EE6A57C54251}
-		{BBD54398-93CD-4E7B-B74A-8164F41C3DBD} = {84342D66-94D9-49C7-94FE-EE6A57C54251}
-		{9F6DEE26-9755-4040-B63A-85BF9AB3AFD0} = {84342D66-94D9-49C7-94FE-EE6A57C54251}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0

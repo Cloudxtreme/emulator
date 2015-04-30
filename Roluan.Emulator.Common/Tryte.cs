@@ -12,7 +12,7 @@ namespace Roluan.Emulator.Common
             Initialize();
         }
 
-        private void Initialize()
+        void Initialize()
         {
             Trits = new List<Trit>();
 

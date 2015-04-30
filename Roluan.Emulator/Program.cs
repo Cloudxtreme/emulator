@@ -1,6 +1,5 @@
 ﻿using System;
-using Roluan.Emulator.Board.Components.BiosComponent;
-using Roluan.Emulator.Board;
+
 
 namespace Roluan.Emulator
 {
@@ -9,7 +8,7 @@ namespace Roluan.Emulator
         [STAThread]
         public static void Main()
         {
-            new MainBoard().PowerUp();
+            //new MainBoard().PowerUp();
         }
     }
 }
