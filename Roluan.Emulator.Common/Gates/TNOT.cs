@@ -20,7 +20,7 @@ namespace Roluan.Emulator.Common.Gates
                     }
                 default:
                     {
-                        return new Trit(TritState.Positive);
+                        return new Trit(TritState.Zero);
                     }
             }
         }
