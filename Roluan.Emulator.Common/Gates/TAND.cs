@@ -26,7 +26,7 @@ namespace Roluan.Emulator.Common.Gates
             {
                 return new Trit(TritState.Negative);   
             }
-            else (inputA.State == TritState.Zero && inputB.State == TritState.Zero)
+            else
             {
                 return new Trit(TritState.Zero);   
             }

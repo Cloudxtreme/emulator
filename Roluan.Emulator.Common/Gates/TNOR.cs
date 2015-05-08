@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Roluan.Emulator.Common.Gates
+﻿namespace Roluan.Emulator.Common.Gates
 {
     public static class TNOR
     {

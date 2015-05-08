@@ -33,4 +33,3 @@ namespace Roluan.Emulator.Common.Gates
         }
     }
 }
-
