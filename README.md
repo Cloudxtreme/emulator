@@ -1,4 +1,4 @@
 # Roluan Emulator
 Emulator for ternary computer written in c#
 
-We are mocnit to .Net Core
+We are rewriting the code using the .Net Core
