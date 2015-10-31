@@ -1,14 +1,9 @@
-﻿using System;
-
-
-namespace Roluan.Emulator
+﻿namespace Roluan.Emulator
 {
-    static class Program
+    public class Program
     {
-        [STAThread]
-        public static void Main()
+        public void Main(string[] args)
         {
-            //new MainBoard().PowerUp();
         }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Roluan.Emulator.Common.Exceptions
 {
-    public class NullTernaryObjectException: Exception
+    public class TernaryException : Exception
     {
 
     }

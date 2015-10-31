@@ -6,9 +6,9 @@ namespace Roluan.Emulator.Common
     {
         public static void IsNull(object item)
         {
-            if(item == null)
+            if (item == null)
             {
-                throw new NullTernaryObjectException();
+                throw new NullObjectException();
             }
         }
     }

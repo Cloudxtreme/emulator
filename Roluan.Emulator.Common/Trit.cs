@@ -2,8 +2,8 @@
 
 namespace Roluan.Emulator.Common
 {
-	public class Trit
-	{
+    public class Trit
+    {
 
         #region Constructors
 
@@ -30,11 +30,11 @@ namespace Roluan.Emulator.Common
         #region Properties
 
         /// <summary>
-        /// Gets or sets the state.
+        /// Gets or sets the Trit state.
         /// </summary>
         /// <value>The state.</value>
         public TritState State { get; set; }
 
         #endregion
-	}
+    }
 }

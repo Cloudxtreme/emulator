@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Roluan.Emulator.Common.Enums;
 
 namespace Roluan.Emulator.Common
 {
@@ -18,7 +17,7 @@ namespace Roluan.Emulator.Common
 
             for (int i = 0; i < Config.TRYTE_SIZE; i++)
             {
-                Trits.Add(new Trit { State = TritState.Zero });
+                Trits.Add(new Trit());
             }
         }
     }
