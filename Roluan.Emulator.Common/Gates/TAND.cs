@@ -2,13 +2,15 @@
 
 namespace Roluan.Emulator.Common.Gates
 {
+    /// <summary>
+    /// Represents The Ternary AND gate
+    /// </summary>
     public static class TAND
     {
         public static Trit Output(Trit inputA, Trit inputB) 
         { 
             Check.IsNull(inputA);
             Check.IsNull(inputB);
-
 
             if (inputA.State == TritState.Negative && inputB.State == TritState.Negative)
             {

@@ -2,13 +2,15 @@
 
 namespace Roluan.Emulator.Common
 {
+    /// <summary>
+    /// Class that represents a Trit
+    /// </summary>
     public class Trit
     {
-
         #region Constructors
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Roluan.Emulator.Common.Trit"/> class.
+        /// Initializes a new instance of the <see cref="Trit"/> class.
         /// The default state of Trit is Zero.
         /// </summary>
         public Trit()
@@ -19,7 +21,7 @@ namespace Roluan.Emulator.Common
         /// <summary>
         /// Initializes a new instance of the <see cref="Roluan.Emulator.Common.Trit"/> class.
         /// </summary>
-        /// <param name="state">The state that the Trit will have</param>
+        /// <param name="state">The state that the <see cref="Trit"/> will have</param>
         public Trit(TritState state)
         {
             State = state;
@@ -30,7 +32,7 @@ namespace Roluan.Emulator.Common
         #region Properties
 
         /// <summary>
-        /// Gets or sets the Trit state.
+        /// Gets or sets the <see cref="Trit"/> state.
         /// </summary>
         /// <value>The state.</value>
         public TritState State { get; set; }

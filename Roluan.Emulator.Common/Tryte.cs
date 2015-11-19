@@ -2,9 +2,16 @@
 
 namespace Roluan.Emulator.Common
 {
+    /// <summary>
+    /// Class that represents a Tryte
+    /// </summary>
     public class Tryte
     {
-        public List<Trit> Trits { get; set; }
+        #region Properties
+
+        public List<Trit> Trits { get; private set; }
+
+        #endregion
 
         public Tryte()
         {

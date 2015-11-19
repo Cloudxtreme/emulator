@@ -1,28 +1,28 @@
 {
-    "version": "1.0.0-*",
-    "description": "Roluan.Emulator Console Application",
-    "authors": [ "Rostislav Rotaru" ],
-    "tags": [ "" ],
-    "projectUrl": "",
-    "licenseUrl": "",
-
-    "dependencies": {
-        "Roluan.Emulator.Common": "1.0.0-*"
-    },
-
-    "commands": {
+    "authors":
+    [
+        "Rostislav Rotaru"
+    ],
+    "commands":
+    {
         "Roluan.Emulator": "Roluan.Emulator"
     },
+    "dependencies":
+    {
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "Roluan.Emulator.Common": "1.0.0-*",
+        "System.Console": "4.0.0-beta-23019",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Reflection": "4.1.0-beta-23516",
+        "System.Threading": "4.0.11-beta-23516"
+    },
+    "description": "Roluan.Emulator Console Application",
+    "frameworks":
+    {
+        "dnxcore50":
+        {
 
-    "frameworks": {
-        "dnxcore50": {
-            "dependencies": {
-                "System.Collections": "4.0.10-beta-23019",
-                "System.Console": "4.0.0-beta-23019",
-                "System.Linq": "4.0.0-beta-23019",
-                "System.Threading": "4.0.10-beta-23019",
-                "Microsoft.CSharp": "4.0.0-beta-23019"
-            }
         }
-    }
+    },
+    "version": "1.0.0-*"
 }

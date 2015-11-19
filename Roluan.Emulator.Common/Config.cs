@@ -1,7 +1,11 @@
 ﻿namespace Roluan.Emulator.Common
 {
+    /// <summary>
+    /// Configuration class
+    /// </summary>
     public static class Config
     {
-        public const int TRYTE_SIZE = 9; // Nine trits in one tryte
+        // Nine trits in one tryte
+        public const int TRYTE_SIZE = 9;
     }
 }
