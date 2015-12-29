@@ -14,9 +14,9 @@
     },
     "dependencies":
     {
-        "Microsoft.CSharp": "4.0.1-beta-23516",
-        "System.Collections": "4.0.10-beta-23019",
-        "System.Linq": "4.0.1-beta-23516",
-        "System.Threading": "4.0.11-beta-23516"
+        "Microsoft.CSharp": "4.0.1-beta-*",
+        "System.Collections": "4.0.11-beta-*",
+        "System.Linq": "4.0.1-beta-*",
+        "System.Threading": "4.0.11-beta-*"
     }
 }
