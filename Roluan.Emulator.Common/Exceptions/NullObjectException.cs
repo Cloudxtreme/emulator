@@ -3,7 +3,7 @@
     /// <summary>
     /// Is raised when an object is null
     /// </summary>
-    public class NullObjectException: TernaryException
+    public class TNullObjectException: TernaryException
     {
     }
 }

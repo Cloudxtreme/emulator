@@ -15,7 +15,7 @@ namespace Roluan.Emulator.Common
         {
             if (item == null)
             {
-                throw new NullObjectException();
+                throw new TNullObjectException();
             }
         }
     }
